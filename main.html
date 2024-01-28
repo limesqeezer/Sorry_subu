@@ -9,14 +9,17 @@
 <body>
     <div class="container">
         <h1>Hii Nandu</h1>
-        <p>Mere sath Iskon chale gi??<br>
+        <p>Mere sath Iskon chale gi??<br><br>
         <i>I am not forcing you, if you are comfortable then okay.<br>
         Aur aaj nahi toh kabhi aur bhi ja sakte hai.<br><br>
 
         And i promise you between this apni studies disturb nahi hogi <br>
 
         Agar 'No' hai toh bhi koi baat nahi, bas dosti mat tood na.<br><br>
-        Vaise bhi tere jaise acche dost kam milte hai.</i></p>
+        And Bhul jana maine ye kabhi pucha tha simple  </i>😊😊<br><i><br>
+        Vaise bhi tere jaise acche dost kam milte hai.<br>
+        And please marne mat daudna 🙏🏻🙏🏻</i>
+    </p>
         <div class="button-container">
             <button class="btn yes-btn" onclick="startParty()">Yes</button>
             <button class="btn no-btn">No</button>
@@ -68,7 +71,6 @@
             const left = Math.random() * (container.offsetWidth - 10); // 10 is the width of the confetti
             const top = Math.random() * (container.offsetHeight - 10); // 10 is the height of the confetti
 
-            // Ensure the confetti stays within the container
             if (left < 0) left = 0;
             if (top < 0) top = 0;
 
@@ -82,11 +84,9 @@
             const balloon = document.createElement('div');
             balloon.classList.add('balloon');
 
-            // Generate random position within container
-            let left = Math.random() * (container.offsetWidth - 20); // 20 is the width of the balloon
-            let top = Math.random() * (container.offsetHeight - 30); // 30 is the height of the balloon
+            let left = Math.random() * (container.offsetWidth - 20);
+            let top = Math.random() * (container.offsetHeight - 30); 
 
-            // Check if the balloon overlaps with existing balloons
             const balloons = container.querySelectorAll('.balloon');
             let overlap = false;
             balloons.forEach(existingBalloon => {
@@ -97,11 +97,10 @@
                 }
             });
 
-            // Ensure the balloon stays within the container
+        
             if (left < 0) left = 0;
             if (top < 0) top = 0;
-
-            // Add the balloon if it doesn't overlap
+   
             if (!overlap) {
                 balloon.style.left = `${left}px`;
                 balloon.style.top = `${top}px`;
