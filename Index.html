@@ -3,64 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proposal_Question</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color:violet; /* Your favorite image URL */
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: #ffffff; /* Text color */
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            height: 90vh; /* 90% of viewport height */
-            margin: 10vh auto; /* Vertically centered */
-            background: url('Back.jpg'), rgba(0, 0, 0, 0.8); /* Multiple background images */
-            background-size: cover, auto; /* Size of each background */
-            padding: 60px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        h1 {
-            margin-bottom: 20px;
-            color: rgb(239, 5, 138); /* Change text color to pink */
-        }
-        .btn {
-            padding: 10px 20px;
-            margin: 0 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .yes-btn {
-            background-color: #4CAF50;
-            color: #ffffff;
-            transition: background-color 0.3s;
-        }
-        .yes-btn:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>I'm Sorry, Subu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <img src="Image.png" alt="GIF" style="width: 400px; height: 400px; margin-bottom: 0px;">
-        <h1>I wanna ask you a question.May I ??</h1>
-        <button class="btn yes-btn" onclick="redirectToProposalPage()">Yes</button>
-    </div>
-
-    <script>
-        function redirectToProposalPage() {
-            window.location.href = "Index1.html"; // Redirect to the proposal page
-        }
-    </script>
+    <header>
+        <h1>Hey Subu</h1>
+    </header>
+    <main>
+        <section id="apology">
+            <h2>Sorry ha vo uss time pahachan nahi paiye the</h2>
+            <div id="animation-container">
+                <div class="emoji">🥺</div>
+                <div class="tear tear-left"></div>
+                <div class="tear tear-right"></div>
+            </div>
+            <h2>But maja aaya vaise daat khane mai 🙃😂</h2>
+        </section>
+        <section id="response-buttons">
+            <button id="forgive-button">Maaf Kia</button>
+            <button id="alright-button">That's Alright</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
